@@ -49,8 +49,7 @@ void read_file(FILE *f_desc);
 int len_chars(FILE *);
 void find_function(char *opcode, char *value, int l_num, int format);
 
-
-void call_fun(op_func, char *, char *, int, int);
+void call_func(op_func func, char *op_code, char *value, int l_nm, int format);
 
 /*Error hanlding*/
 void errors(int error_code, ...);
