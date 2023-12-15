@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: monty file\n");
-		return (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	openning_file(argv[1]);
 	freeNodes();
-	return (EXIT_SUCCESS);
+	return(0);
 }
 
 /**
