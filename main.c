@@ -15,9 +15,8 @@ int main(int argc, char *argv[])
 	}
 	openning_file(argv[1]);
 	freeNodes();
-	return(0);
+	return (0);
 }
-
 /**
  * createNode - Entry point
  * @n: param for int
