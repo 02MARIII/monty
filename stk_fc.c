@@ -8,9 +8,9 @@ void addStack(stack_t **new_node, __attribute__((unused))unsigned int ln)
 {
 	stack_t *temp;
 
-	if (!new_node || *new_node == NULL)
+	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
-	if (!head)
+	if (head == NULL)
 	{
 		head = *new_node;
 		return;
